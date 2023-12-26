@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1a11e246e6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: 'Cairo', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+        img{
+            width: 100%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        section{
+            padding:30px 0px;
+        }
+        .container{
+            width:90%;
+            margin:auto;
+        }
+
+        .title{
+            text-transform: uppercase;
+            font-weight: 800;
+            position: relative;
+            margin: auto;
+            width:fit-content;
+            margin-bottom:50px;
+            padding:5px 20px;
+            font-size: 20px;
+            border:1px solid black;
+            transition: 1s color ease;
+            z-index: 1;
+        }
+        .title:hover{
+            color:white;
+        }
+        .title::before{
+            content:"";
+            display: block;
+            width:12px;
+            height:12px;
+            background-color: #2196f3;
+            position: absolute;
+            left:-30px;
+            top:50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+        .title::after{
+            content:"";
+            display: block;
+            width:12px;
+            height:12px;
+            background-color: #2196f3;
+            position: absolute;
+            right:-30px;
+            top:50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+        .title:hover::after{
+            z-index: -1; 
+
+            animation: translateLeft 1s ease forwards;
+        }
+        .title:hover::before{
+            z-index: -1;
+            animation: translateRight 1s ease forwards;
+        }
+        .testmonials-section{
+            background-color: #ececec;
+            height: 100vh;
+        }
+        .testmonials{
+            width: calc(3*300px + 300px);
+            margin:auto;
+            display: flex;
+            height: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .testmonials .testmonial{
+            width: 300px;
+            position: relative;
+            background-color: white;
+            margin:30px;
+            text-align: left;
+            padding:20px;
+            border-radius: 5px;
+        }
+        @media(max-width:1260px){
+            .testmonials-section{
+                height: 150vh;
+            }
+            .testmonials{
+                width: calc(2*300px + 300px);
+            }
+        }
+        @media(max-width:900px){
+            .testmonials-section{
+                height: 200vh;
+            }
+            .testmonials{
+                width: 100%;
+            }
+            .testmonials .testmonial{
+                width: 100%;
+            }
+        }
+
+        .testmonials .testmonial img{
+            border-radius: 50%;
+            width: 80px;
+            position: absolute;
+            right: -15px;
+            top: -50px;
+            border: 10px solid #ececec;
+        }
+        .testmonials .testmonial h5{
+            display: flex;
+            margin:10px 0;
+            color:#777;
+        }
+        .testmonials .testmonial ul{
+            display: flex;
+            align-items: center;
+            margin:10px 0;
+        }
+        .testmonials .testmonial ul li{
+            margin-right: 5px;
+            color:white;
+        }
+        .testmonials .testmonial ul li i.fa-star.fa-solid{
+            color:#ffc107;
+        }
+        .testmonials .testmonial p{
+            color:#777;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="testmonials-section">
+        <div class="container">
+            <h1 class="title">Testmonials</h1>
+            <div class="testmonials">
+                <div class="testmonial">
+                    <img src="images/avatar-01.png">
+                    <h1>Gebraiel Malak</h1>
+                    <h5>Full Stack Developer</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <i class="fa-regular fa-star"></i>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                </div>
+                <div class="testmonial">
+                    <img src="images/avatar-02.png">
+                    <h1>Mohamed Ibrahim</h1>
+                    <h5>Full Stack Developer</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <i class="fa-regular fa-star"></i>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                </div>
+                <div class="testmonial">
+                    <img src="images/avatar-03.png">
+                    <h1>Shady Nabil</h1>
+                    <h5>Full Stack Developer</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <i class="fa-regular fa-star"></i>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                </div>
+                <div class="testmonial">
+                    <img src="images/avatar-04.png">
+                    <h1>Amr Hendawy
+                    </h1>
+                    <h5>Full Stack Developer</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <i class="fa-regular fa-star"></i>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                </div>
+                <div class="testmonial">
+                    <img src="images/avatar-05.png">
+                    <h1>Sherief Ashraf
+                    </h1>
+                    <h5>Full Stack Developer</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <i class="fa-regular fa-star"></i>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                </div>
+                <div class="testmonial">
+                    <img src="images/avatar-06.png">
+                    <h1>Mohamed Farag</h1>
+                    <h5>Full Stack Developer</h5>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <i class="fa-regular fa-star"></i>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

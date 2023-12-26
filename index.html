@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1a11e246e6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+                *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: 'Cairo', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            height: 101vh;
+        }
+        img{
+            width: 100%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        footer{
+            background-color: #191919;
+            color: #b9b9b9;
+
+        }
+        footer .container{
+            width:60%;
+            margin:auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        footer .container:first-child{
+            padding:50px 0;
+        }
+        .col{
+            width: calc(100% / 3 - 50px);
+        }
+        .col h1{
+            color:white;
+        }
+        .col .social-media{
+            display: flex;
+            margin:20px 0;
+        }
+        .col .social-media a{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            background-color: #313131;
+            cursor: pointer;
+            transition: 0.5s background-color ease;
+            font-size: 20px;
+        }
+        .col p{
+            line-height: 1.9;
+        }
+        a.facebook:hover{
+            color:white;
+            background-color: #1877f2;
+        }
+        a.codepen:hover{
+            color:black;
+            background-color: white;
+        }
+        a.linkedin:hover{
+            color:white;
+            background-color: #0a66c2;
+        }
+        .col .important-links{
+            display: flex;
+            flex-direction: column;
+        }
+        .col .important-links a{
+            padding:15px 0;
+            border-bottom:1px solid #444;
+            cursor: pointer;
+            margin-left:0;
+            transition: color 0.3s ease;
+        }
+        
+        .col .important-links a i{
+            margin-right:5px;
+            margin-left:0px;
+            transition: margin-left 0.3s ease;
+            color: #2196f3;
+        }
+        
+        .col .important-links a:hover i{
+            margin-left:5px;
+        }
+        .col .important-links a:hover{
+            color:white;
+        }
+
+        .col .contacts li{
+            margin-bottom:20px;
+            display: flex;
+            align-items: center;
+        }
+        .col .contacts i{
+            margin-right:10px;
+            font-size: 20px;
+            color:#2196f3
+            
+        }
+
+        hr{
+            border-color:#444
+        }
+        footer .sub-footer{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:20px 0;
+        }
+        .sub-footer p i{
+            color:red
+        }
+    </style>
+</head>
+<body>
+   <footer >
+
+    <div class="container">
+        <div class="col">
+            <h1>Elzero</h1>
+            <div class="social-media">
+                <a class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="codepen"><i class="fa-brands fa-codepen"></i></i></a>
+                <a class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur</p>
+        </div>    
+         <div class="col">
+            <div class="important-links">
+                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+            </div>
+        </div>    
+        <div class="col">
+            <ul class="contacts">
+                <li><i class="fa-solid fa-location-dot"></i><p>Egypt, Giza, Inside The Sphinx, Room Number 220</p>
+                </li>
+                <li><i class="fa-regular fa-clock"></i><p>Business Hours: From 10:00 To 18:00</p>
+                </li>
+                <li><i class="fa-solid fa-phone-volume"></i>+20123456789<br>+20198765432</li>
+            </ul>
+        </div>    
+    
+    </div>
+    <hr>
+    <div class="container sub-footer">
+        <p>Template From Elzero.org</p>
+        <p>Made With <i class="fa-solid fa-heart"></i> By Gebraiel</p>
+    </div>
+   </footer>
+
+</body>
+</html>

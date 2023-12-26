@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .traingle{
+            position: relative;
+            width:350px;
+            height: 200px;
+            background-color: #ececec;
+            overflow: hidden;
+        }
+        .traingle::after{
+            content: "";
+            display: block;
+            background-color: black;
+            width: 390px;
+            height: 200px;
+            position: absolute;
+            right: 0;
+            top: 110px;
+            transform: skew(0deg,-15deg);
+            transition: 0.5s transform ease;
+        }
+        .traingle:hover::after{
+            transform: skew(0deg,15deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="traingle"></div>
+</body>
+</html>

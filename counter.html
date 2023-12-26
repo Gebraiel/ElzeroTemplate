@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1a11e246e6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+                *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: 'Cairo', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            height: 101vh;
+        }
+        img{
+            width: 100%;
+        }
+        ul{
+            list-style-type: none;
+        }
+        section{
+            padding:30px 0px;
+        }
+        .container{
+            width:90%;
+            margin:auto;
+        }
+        
+        .stats-section{
+            background-image: url("./images/stats.jpg");
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+            background-repeat: no-repeat; /* Adjust as needed */
+            position: relative;
+            padding:100px 0px;
+        }
+        .stats-section::after{
+            content: "";
+            display: block;
+            background-color: #fff;
+            opacity: 0.9;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 0;
+        }
+        .stats-section .container{
+            position: relative;
+            z-index: 1;
+        }
+        .stats-section .container h1{
+            width: fit-content;
+            margin:auto;
+            font-weight: 900;
+            margin-bottom:40px;
+        }
+        .counter-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .counter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:200px;
+            background-color: #fff;
+            margin-right:10px;
+            margin-bottom:10px;
+            padding:20px 0px;
+            position: relative;
+            font-weight: 600;
+        }
+        .counter i{
+            font-size: 30px;
+        }
+        .counter p{
+            color:#2196f3;
+            font-style: italic;
+        }
+        .counter::after{
+            content: "";
+            display: block;
+            width:2px;
+            height: 0;
+            position: absolute;
+            background-color: #2196f3;
+            right:0;
+            top:0;
+            transition: height 0.5s ease;
+        }
+        .counter:hover::after{
+            height: 100%;
+        }        
+        .counter::before{
+            content: "";
+            display: block;
+            width:2px;
+            height: 0;
+            position: absolute;
+            background-color: #2196f3;
+            left:0;
+            bottom:0;
+            transition: height 0.5s ease;
+        }
+        .counter:hover::before{
+            height: 100%;
+        }        
+        .num{
+            font-size: 30px;
+            margin:5px 0;
+        }
+        @media(max-width:934px){
+            .counter{
+                width:calc(50% - 20px);
+            }
+        }
+        @media(max-width:466px){
+            .counter{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <section class="stats-section">
+    <div class="container">
+
+        <h1>Our Awesome Stats</h1>
+        <div class="counter-container">
+            <div class="counter">
+                <i class="fa-regular fa-user"></i>                
+                <div class="num" data-goal = "150">0</div>
+                <p>Clients</p>
+            </div>
+            <div class="counter">
+                <i class="fa-solid fa-code"></i>             
+                <div class="num" data-goal = "135">0</div>
+                <p>Projects</p>
+            </div>
+            <div class="counter">
+                <i class="fa-solid fa-earth-americas"></i>             
+                <div class="num" data-goal = "50">0</div>
+                <p>Countries</p>
+            </div>
+            <div class="counter">
+                <i class="fa-solid fa-money-bill"></i>              
+                <div class="num" data-goal = "500">0</div>
+                <p>Money</p>
+            </div>
+          </div>
+    </div>
+   </section>
+   <script>
+        let section =document.querySelector('.stats-section')
+        let numbers = document.querySelectorAll('.counter .num');
+        let accumlativeDurations = Array(numbers.length).fill(0);
+        let durations = [];
+        let duration = 10;
+       
+        let flag = true
+        window.onscroll = function(){
+            if(window.scrollY >= section.offsetTop && flag){
+                for (let i = 0; i < numbers.length; i++) {
+                    increaseCounter(numbers[i]);
+                }
+                flag = false;
+            }
+        }
+        function increaseCounter(element){
+        let goal = element.getAttribute('data-goal');
+        let interval = setInterval(function(){
+            element.textContent++; 
+            if(element.textContent === goal){
+            clearInterval(interval);
+            }
+        },duration)
+        }
+   </script>
+</body>
+</html>
