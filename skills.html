@@ -80,10 +80,7 @@
             z-index: -1;
             animation: translateRight 1s ease forwards;
         }
-        .image{
-            width:500px;
-
-        }
+       
         .skills-container{
             width:1200px;
             margin: auto;
@@ -91,23 +88,26 @@
             align-items: center;
             justify-content: space-between;
         }
-        .skills{
+        .skills-container .image{
+            width:500px;
+        }
+        .skills-container .skills{
             width:50%;
         }
-        .skill{
+        .skills-container .skills .skill{
             width:100%;
             height:20px;
             margin:10px 0;
 
             background-color: #ececec;
         }
-        .skill div{
+        .skills-container .skills .skill div{
             width:0;
             height: 100%;
             background-color: #2196f3;
             transition: width 1s ease;
         }
-        .skills h5{
+        .skills-container .skills h5{
             float:right;
             position: relative;
             color:#0075ff;

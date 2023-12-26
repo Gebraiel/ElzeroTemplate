@@ -1,0 +1,151 @@
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+
+.logo h1 {
+    color: var(--main-color);
+}
+
+.nav {
+    width: 350px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+}
+
+main {
+    height: 80%;
+}
+
+.landing {
+    height: 80vh;
+    background-color: #ececec;
+}
+
+.landing .container {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing .container .content h1 {
+    font-size: 40px;
+}
+
+.landing .container .content p {
+    font-size: 24px;
+    color: #666;
+}
+
+.landing .container .image img {
+    animation: moveUpDown 2s infinite linear;
+
+}
+
+.landing .shape {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.landing .shape a {
+    animation: bounce 0.8s infinite ease;
+
+}
+
+@media(max-width:991px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .landing .container .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .landing .container .content h1 {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .landing .container .content p {
+        width: 60%;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .landing .container .image {
+        display: none;
+    }
+}
+
+/* @media(max-width:480px){
+.landing .container .content h1{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.landing .container .content p{
+    font-size:15px;
+}
+
+} */
+@media(max-width:360px) {
+    .nav {
+        width: 260px;
+    }
+
+    .nav ul li {
+        font-size: 12px;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

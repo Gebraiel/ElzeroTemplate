@@ -4,169 +4,1014 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/1a11e246e6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1a11e246e6.js" crossorigin="anonymous"></script>
     <style>
-                *{
-            padding:0;
-            margin:0;
+        *{
+            margin : 0;
+            padding: 0;
+        }
+        :root{
+            --main-color:#2196f3;
         }
         body{
-            font-family: 'Cairo', sans-serif;
-            font-family: 'Poppins', sans-serif;
-            height: 101vh;
+            font-family: 'Poppins', sans-serif; 
+            overflow-x: hidden;   
+            width:100vw;
+            /* overflow-x: hidden;
+            width:100vw; */
+        }
+        section{
+            margin-bottom:100px;
         }
         img{
             width: 100%;
         }
-        ul{
-            list-style-type: none;
-        }
-        footer{
-            background-color: #191919;
-            color: #b9b9b9;
-
-        }
-        footer .container{
-            width:60%;
+        .container{
+            width:90%;
             margin:auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-        footer .container:first-child{
-            padding:50px 0;
-        }
-        .col{
-            width: calc(100% / 3 - 50px);
-        }
-        .col h1{
-            color:white;
-        }
-        .col .social-media{
-            display: flex;
-            margin:20px 0;
-        }
-        .col .social-media a{
-            display: flex;
-            width: 50px;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            margin-right: 10px;
-            background-color: #313131;
-            cursor: pointer;
-            transition: 0.5s background-color ease;
-            font-size: 20px;
-        }
-        .col p{
-            line-height: 1.9;
-        }
-        a.facebook:hover{
-            color:white;
-            background-color: #1877f2;
-        }
-        a.codepen:hover{
-            color:black;
-            background-color: white;
-        }
-        a.linkedin:hover{
-            color:white;
-            background-color: #0a66c2;
-        }
-        .col .important-links{
-            display: flex;
-            flex-direction: column;
-        }
-        .col .important-links a{
-            padding:15px 0;
-            border-bottom:1px solid #444;
-            cursor: pointer;
-            margin-left:0;
-            transition: color 0.3s ease;
-        }
-        
-        .col .important-links a i{
-            margin-right:5px;
-            margin-left:0px;
-            transition: margin-left 0.3s ease;
-            color: #2196f3;
-        }
-        
-        .col .important-links a:hover i{
-            margin-left:5px;
-        }
-        .col .important-links a:hover{
-            color:white;
-        }
-
-        .col .contacts li{
-            margin-bottom:20px;
-            display: flex;
-            align-items: center;
-        }
-        .col .contacts i{
-            margin-right:10px;
-            font-size: 20px;
-            color:#2196f3
-            
-        }
-
-        hr{
-            border-color:#444
-        }
-        footer .sub-footer{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding:20px 0;
-        }
-        .sub-footer p i{
-            color:red
         }
     </style>
+    <link rel="stylesheet"href="css/landing-page.css">
+    <link rel="stylesheet"href="css/articles.css">
+    <link rel="stylesheet"href="css/gallery.css">
+    <link rel="stylesheet"href="css/features.css">
+    <link rel="stylesheet"href="css/testmonials.css">
+    <link rel="stylesheet"href="css/team-members.css">
+    <link rel="stylesheet"href="css/services.css">
+    <link rel="stylesheet"href="css/skills.css">
+    <link rel="stylesheet"href="css/works.css">
+    <link rel="stylesheet"href="css/timer.css">
+    <link rel="stylesheet"href="css/pricing-plans.css">
+    <link rel="stylesheet"href="css/videos.css">
+    <link rel="stylesheet"href="css/stats.css">
+    <link rel="stylesheet"href="css/discount.css">
+    <link rel="stylesheet"href="css/footer.css">
+    
 </head>
 <body>
-   <footer >
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Elzero</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        Article
+                    </li>
+                    <li>
+                        Gallery
+                    </li>
+                    <li>
+                        Features
+                    </li>
+                    <li>
+                        Other Links
+                    </li>
 
-    <div class="container">
-        <div class="col">
-            <h1>Elzero</h1>
-            <div class="social-media">
-                <a class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a class="codepen"><i class="fa-brands fa-codepen"></i></i></a>
-                <a class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </ul>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur</p>
-        </div>    
-         <div class="col">
-            <div class="important-links">
-                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
-                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
-                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
-                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
-                <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+        </div>
+    </header>
+    <main>
+        <section class="landing">
+            <div class="container">
+                <div class="content">
+                    <h1>
+                        Welcome, To Elzero World
+                    </h1>
+                    <p>
+                        Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="images/landing-image.png">
+                </div>
             </div>
-        </div>    
-        <div class="col">
-            <ul class="contacts">
-                <li><i class="fa-solid fa-location-dot"></i><p>Egypt, Giza, Inside The Sphinx, Room Number 220</p>
-                </li>
-                <li><i class="fa-regular fa-clock"></i><p>Business Hours: From 10:00 To 18:00</p>
-                </li>
-                <li><i class="fa-solid fa-phone-volume"></i>+20123456789<br>+20198765432</li>
-            </ul>
-        </div>    
+            <div class="shape">
+                <a><i class="fa-solid fa-arrow-down"></i></a>
+            </div>
+        </section>
+         <section class="articles">
+            <div class="container">
+                    <h1 class="title">
+                        Articles
+                    </h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/cat-01.jpg">
+                        </div>
+                        <div class="description">
+                            <h3>Test Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        </div>
+                        <div class="read-more">
+                            <h5>Read More</h5>
+                            <i class="fa-solid fa-arrow-right"></i>                    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/cat-02.jpg">
+                        </div>
+                        <div class="description">
+                            <h3>Test Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        </div>
+                        <div class="read-more">
+                            <h5>Read More</h5>
+                            <i class="fa-solid fa-arrow-right"></i>                    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/cat-03.jpg">
+                        </div>
+                        <div class="description">
+                            <h3>Test Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        </div>
+                        <div class="read-more">
+                            <h5>Read More</h5>
+                            <i class="fa-solid fa-arrow-right"></i>                    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/cat-04.jpg">
+                        </div>
+                        <div class="description">
+                            <h3>Test Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        </div>
+                        <div class="read-more">
+                            <h5>Read More</h5>
+                            <i class="fa-solid fa-arrow-right"></i>                    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/cat-05.jpg">
+                        </div>
+                        <div class="description">
+                            <h3>Test Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        </div>
+                        <div class="read-more">
+                            <h5>Read More</h5>
+                            <i class="fa-solid fa-arrow-right"></i>                    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/cat-06.jpg">
+                        </div>
+                        <div class="description">
+                            <h3>Test Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        </div>
+                        <div class="read-more">
+                            <h5>Read More</h5>
+                            <i class="fa-solid fa-arrow-right"></i>                    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/cat-07.jpg">
+                        </div>
+                        <div class="description">
+                            <h3>Test Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        </div>
+                        <div class="read-more">
+                            <h5>Read More</h5>
+                            <i class="fa-solid fa-arrow-right"></i>                    
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="images/cat-08.jpg">
+                        </div>
+                        <div class="description">
+                            <h3>Test Title</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
+                        </div>
+                        <div class="read-more">
+                            <h5>Read More</h5>
+                            <i class="fa-solid fa-arrow-right"></i>                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="gallery">
+            <div class="container">
+                <h1 class="title">
+                    Gallery
+                </h1>
+            <div class="cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="images/gallery-01.png">
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="images/gallery-02.png">
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="images/gallery-03.jpg">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="images/gallery-04.png">
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="images/gallery-05.jpg">
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="image">
+                        <img src="images/gallery-06.png">
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div> 
+        </section>
+        <section class="features-section">
+            <div class="container">
+                <h1 class="title">
+                    Articles
+                </h1>
+                <div class="features">
+                    <div class="feature" >
+                        <div class="image">
+                            <div class="overlay" style="background-color:#f44036"></div>
+                            <img src="images/features-01.jpg">
+                        </div>
+                        <div class="text">
+                            <h1>
+                                Quality
+                                <hr style="background-color:#f44036">
+                            </h1>
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+                            <div class="more-button" style="border-color:#f44036; color:#f44036;" >
+                                <h2>More</h2>
+                                <span style="background-color:#f44036"></span>
+                            </div>
+                        </div>
     
-    </div>
-    <hr>
-    <div class="container sub-footer">
-        <p>Template From Elzero.org</p>
-        <p>Made With <i class="fa-solid fa-heart"></i> By Gebraiel</p>
-    </div>
-   </footer>
+                    </div>
+                    <div class="feature" >
+                        <div class="image">
+                            <div class="overlay" style="background-color:#009688;"></div>
+                            <img src="images/features-02.jpg">
+                        </div>
+                        <div class="text">
+                            <h1>
+                                Time
+                                <hr style="background-color:#009688;">
+                            </h1>
+                            
+    
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+                            <div class="more-button"  style="border-color:#009688;color:#009688;">
+                                <h2>More</h2>
+                                <span style="background-color:#009688;"></span>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="feature" >
+                        <div class="image">
+                            <div class="overlay " style="background-color:#03a9f4"></div>
+                            <img src="images/features-03.jpg">
+                        </div>
+                        <div class="text">
+                            <h1>
+                                Passion
+                                <hr style="background-color:#03a9f4">
+                            </h1>
+                           
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit harum hic veniam eligendi minima</p>
+                        
+                            <div class="more-button" style="border-color:#03a9f4;color:#03a9f4;" data-foo="red">
+                                <h2>More</h2>
+    
+                                <span style="background-color:#03a9f4"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testmonials-section">
+            <div class="container">
+                <h1 class="title">Testmonials</h1>
+                <div class="testmonials">
+                    <div class="testmonial">
+                        <img src="images/avatar-01.png">
+                        <h1>Gebraiel Malak</h1>
+                        <h5>Full Stack Developer</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <i class="fa-regular fa-star"></i>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    </div>
+                    <div class="testmonial">
+                        <img src="images/avatar-02.png">
+                        <h1>Mohamed Ibrahim</h1>
+                        <h5>Full Stack Developer</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <i class="fa-regular fa-star"></i>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    </div>
+                    <div class="testmonial">
+                        <img src="images/avatar-03.png">
+                        <h1>Shady Nabil</h1>
+                        <h5>Full Stack Developer</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <i class="fa-regular fa-star"></i>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    </div>
+                    <div class="testmonial">
+                        <img src="images/avatar-04.png">
+                        <h1>Amr Hendawy
+                        </h1>
+                        <h5>Full Stack Developer</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <i class="fa-regular fa-star"></i>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    </div>
+                    <div class="testmonial">
+                        <img src="images/avatar-05.png">
+                        <h1>Sherief Ashraf
+                        </h1>
+                        <h5>Full Stack Developer</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <i class="fa-regular fa-star"></i>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    </div>
+                    <div class="testmonial">
+                        <img src="images/avatar-06.png">
+                        <h1>Mohamed Farag</h1>
+                        <h5>Full Stack Developer</h5>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <i class="fa-regular fa-star"></i>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores et reiciendis voluptatum, amet est natus quaerat ducimus</p>
+                    </div>
+                </div>
+            </div>
+        </section> 
 
+        <section class="team-members-section">
+            <div class="container">
+                <h1 class="title">
+                    Team Members
+                </h1>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="images/team-01.jpg">
+        
+                        </div>
+                        <div class="description">
+                            <h4>Name</h4>
+                            <p>Simple short description</p>
+        
+                        </div>
+                        <ul class="social">
+                            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+        
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="images/team-02.jpg">
+        
+                        </div>
+                        <div class="description">
+                            <h4>Name</h4>
+                            <p>Simple short description</p>
+        
+                        </div>
+                        <ul class="social">
+                            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+        
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="images/team-03.jpg">
+        
+                        </div>
+                        <div class="description">
+                            <h4>Name</h4>
+                            <p>Simple short description</p>
+        
+                        </div>
+                        <ul class="social">
+                            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+        
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="images/team-04.jpg">
+        
+                        </div>
+                        <div class="description">
+                            <h4>Name</h4>
+                            <p>Simple short description</p>
+        
+                        </div>
+                        <ul class="social">
+                            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+        
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="images/team-05.png">
+        
+                        </div>
+                        <div class="description">
+                            <h4>Name</h4>
+                            <p>Simple short description</p>
+        
+                        </div>
+                        <ul class="social">
+                            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+        
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="images/team-06.png">
+        
+                        </div>
+                        <div class="description">
+                            <h4>Name</h4>
+                            <p>Simple short description</p>
+        
+                        </div>
+                        <ul class="social">
+                            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+        
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="images/team-07.jpg">
+        
+                        </div>
+                        <div class="description">
+                            <h4>Name</h4>
+                            <p>Simple short description</p>
+        
+                        </div>
+                        <ul class="social">
+                            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+        
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="images/team-08.jpg">
+        
+                        </div>
+                        <div class="description">
+                            <h4>Name</h4>
+                            <p>Simple short description</p>
+        
+                        </div>
+                        <ul class="social">
+                            <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+        
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services-section">
+            <div class="container">
+                <h1 class="title">Services</h1>
+                <div class="services">
+                    <div class="service">
+                        <div class="service-name">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <h1>Security</h1>
+                        </div>
+                        <div class="details">
+                            <h1>01</h1>
+                            <p>Details</p>
+                        </div>
+                        
+                    </div>
+                    <div class="service">
+                        
+                        <div class="service-name">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h1>Fixing Issues</h1>
+                        </div>
+                        <div class="details">
+                            <h1>02</h1>
+                            <p>Details</p>
+                        </div>
+                        
+                    </div>
+                    <div class="service">
+                        
+                        <div class="service-name">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h1>Location</h1>
+                        </div>
+                        <div class="details">
+                            <h1>03</h1>
+                            <p>Details</p>
+                        </div>
+                        
+                    </div>
+                    <div class="service">
+                        
+                        <div class="service-name">
+                            <i class="fa-solid fa-code"></i>
+                            <h1>Coding</h1>
+                        </div>
+                        <div class="details">
+                            <h1>04</h1>
+                            <p>Details</p>
+                        </div>    
+                    </div>
+    
+                    <div class="service">
+                        
+                        <div class="service-name">
+                            <i class="fa-solid fa-palette"></i>
+                            <h1>Design</h1>
+                        </div>
+                        <div class="details">
+                            <h1>05</h1>
+                            <p>Details</p>
+                        </div>
+                    </div>
+    
+                    <div class="service">
+                        <div class="service-name">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <h1>Marketing</h1>
+                        </div>
+                        <div class="details">
+                            <h1>06</h1>
+                            <p>Details</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <section class="our-skills">
+            <div class="container">
+                <h1 class="title">Our Skills</h1>
+                <div class="skills-container">
+                    <div class="image">
+                        <img src="images/skills.png">
+                    </div>
+                    <div class = "skills">
+                        <h3>HTML</h3>
+                        <h5>90%</h5>
+                        <div class="skill" ><div width = "90%"> </div></div>
+                        <h3>CSS</h3>
+                        <h5>80%</h5>
+                        <div class="skill"><div  width = "80%"> </div></div>
+                        <h3>JavaScript</h3>
+                        <h5>70%</h5>
+                        <div class="skill" ><div width = "70%"> </div></div>
+                        <h3>Java</h3>
+                        <h5>50%</h5>
+                        <div class="skill"><div width = "50%"> </div></div>            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h1 class="title">HOW IT WORKS ?
+                </h1>
+                <div class="works-container">
+                    <div class="image">
+                        <img src="images/work-steps.png">
+                    </div>
+                    <div class = "works">
+                        <div class="work" >
+                            <div class="image"><img src="images/work-steps-1.png"> </div>
+                            <div class="description">
+                                <h1>Business Analysis</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel</p>   
+                            </div>
+                        </div>
+                        <div class="work" >
+                            <div class="image"><img src="images/work-steps-2.png"> </div>
+                            <div class="description">
+                                <h1>Architecture</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel</p>   
+                            </div>
+                        </div>
+                        <div class="work" >
+                            <div class="image"><img src="images/work-steps-3.png"> </div>
+                            <div class="description">
+                                <h1>Developement</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel</p>   
+                            </div>
+                        </div>
+                             
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="timer-section">
+            <div class="container">
+                <h1 class="title">HOW IT WORKS ?
+                </h1>
+                <div class="timer-container">
+                    <div class="image">
+                        <img src="images/events.png">
+                    </div>
+                    <div class="timer-text">
+                        <div class="timer">
+                            <div class="counter days">
+                                <div class="value"></div>
+                                <div class="label">Days</div>
+                            </div>
+                            <div class="counter hours">
+                                <div class="value"></div>
+                                <div class="label">Hours</div>
+                            </div>
+                            <div class="counter minutes">
+                                <div class="value"></div>
+                                <div class="label">Minutes</div>
+                            </div>
+                            <div class="counter seconds">
+                                <div class="value"></div>
+                                <div class="label">Seconds</div>
+                            </div>
+                        </div>
+    
+                        <div class="text">
+                            <h1>New Year 2024</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing-plans">
+            <div class="container">
+                <h1 class="title">Pricing Plans</h1>
+                <div class="plans">
+                    <div class="plan">
+                        <div class="price">
+                            <h3>
+                                Basic
+                            </h3>
+                            <img src="images/hosting-basic.png">
+                            <h1>$ 15</h1>
+                            <p>Per Month</p>
+                        </div>
+                        <div class="features">
+                            <div class="feature"><i class="fa-solid fa-check"></i> 10GB HDD Space</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>5 Email Addresses</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>2 Subdomains</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>4 Databases</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>Basic Support</div>
+                        </div>
+                        <div class="button">Choose Plan</div>
+                    </div>
+                    <div class="plan">
+                        <h2>Most Popular</h2>
+                        <div class="price">
+                            <h3>
+                                Advanced
+                            </h3>
+                            <img src="images/hosting-advanced.png">
+                            <div>
+                                <h1>$ 25</h1>
+                                <p>Per Month</p>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <div class="feature"><i class="fa-solid fa-check"></i> 20GB HDD Space</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>10 Email Addresses</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>5 Subdomains</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>8 Databases</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>Advanced Support</div>
+                        </div>
+                        <div class="button">Choose Plan</div>
+                    </div>
+                    <div class="plan">
+                        <div class="price">
+                            <h3>
+                                Professional
+                            </h3>
+                            <img src="images/hosting-professional.png">
+                            <div>
+                                <h1>$ 45</h1>
+                                <p>Per Month</p>
+                            </div>
+                        </div>
+                        <div class="features">
+                            <div class="feature"><i class="fa-solid fa-check"></i> 50GB HDD Space</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>5 Email Addresses</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>2 Subdomains</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>4 Databases</div>
+                            <div class="feature"><i class="fa-solid fa-check"></i>Basic Support</div>
+                        </div>
+                        <div class="button">Choose Plan</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-videos-section">
+            <div class="container">
+                <h1 class="title">Pricing Plans</h1>
+                <div class="top-videos">
+                    <div class="list">
+                        <div>
+                            <h3>Top Videos</h3>
+                            <i class="fas fa-random"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <p class="video-title">How To Create Sub Domain </p>
+                                <p class="duration">05:18</p>
+                            </li>
+                            <li>
+                                <p class="video-title">Playing With The DNS </p>
+                                <p class="duration">03:18</p>
+                            </li>
+                            <li>
+                                <p class="video-title">Everything About The Virtual Hosts </p>
+                                <p class="duration">05:25</p>
+                            </li>
+                            <li>
+                                <p class="video-title">How To Monitor Your Website </p>
+                                <p class="duration">04:16</p>
+                            </li>
+                            <li>
+                                <p class="video-title">Uncharted Beating The Last Boss
+                                </p>
+                                <p class="duration">07:48</p>
+                            </li>
+                            <li>
+                                <p class="video-title">Ys Oath In Felghana Overview
+                                    </p>
+                                <p class="duration">03:12</p>
+                            </li>
+                            <li>
+                                <p class="video-title">Ys Series All Games Ending</p>
+                                <p class="duration">08:10</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="preview">
+                        <div class="image"><img src="images/video-preview.jpg" alt=""></div>
+                        <div class="video-title">
+                            Everything About The Virtual Hosts
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stats-section">
+            <div class="container">
+        
+                <h1>Our Awesome Stats</h1>
+                <div class="counter-container">
+                    <div class="stats-counter">
+                        <i class="fa-regular fa-user"></i>                
+                        <div class="num" data-goal = "150">0</div>
+                        <p>Clients</p>
+                    </div>
+                    <div class="stats-counter">
+                        <i class="fa-solid fa-code"></i>             
+                        <div class="num" data-goal = "135">0</div>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stats-counter">
+                        <i class="fa-solid fa-earth-americas"></i>             
+                        <div class="num" data-goal = "50">0</div>
+                        <p>Countries</p>
+                    </div>
+                    <div class="stats-counter">
+                        <i class="fa-solid fa-money-bill"></i>              
+                        <div class="num" data-goal = "500">0</div>
+                        <p>Money</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="discount-section">
+            <div class="container">
+                
+                <div class="discount-container">
+                    <div class="half blue">
+                        <h1>We Have A Discount</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi asperiores consectetur, recusandae ratione provident necessitatibus, cumque delectus commodi fuga praesentium beatae. Totam vel similique laborum dicta aperiam odit doloribus corporis.            </p>
+                        <img src="images/discount.png" alt="">
+                    </div>
+                    <div class="half white">
+                        <h1>
+                            Request A Discount
+                        </h1>
+                        <input type="text" placeholder="Your name" class="name">
+                        <input type="email" placeholder="Your Email" class="email">
+                        <input type="text" placeholder="Your Phone" class="phone">
+                        <textarea placeholder="Tell Us About Your Needs" class="message"></textarea>
+                        <input type="submit" value="Send" class="submit-button">
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>   
+    <footer >
+
+        <div class="container">
+            <div class="col">
+                <h1>Elzero</h1>
+                <div class="social-media">
+                    <a class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="codepen"><i class="fa-brands fa-codepen"></i></i></a>
+                    <a class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste aspernatur</p>
+            </div>    
+            <div class="col">
+                <div class="important-links">
+                    <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                    <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                    <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                    <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                    <a><i class="fa-solid fa-angles-right"></i>Important Link</a>
+                </div>
+            </div>    
+            <div class="col">
+                <ul class="contacts">
+                    <li><i class="fa-solid fa-location-dot"></i><p>Egypt, Giza, Inside The Sphinx, Room Number 220</p>
+                    </li>
+                    <li><i class="fa-regular fa-clock"></i><p>Business Hours: From 10:00 To 18:00</p>
+                    </li>
+                    <li><i class="fa-solid fa-phone-volume"></i>+20123456789<br>+20198765432</li>
+                </ul>
+            </div>    
+        
+        </div>
+        <hr>
+        <div class="container sub-footer">
+            <p>Template From Elzero.org</p>
+            <p>Made With <i class="fa-solid fa-heart"></i> By Gebraiel</p>
+        </div>
+       </footer>
+    <script>
+        let section = document.querySelector('.our-skills');
+        let skillsWidth = document.querySelectorAll('.skill div');
+        window.onscroll = function(){
+            if(window.scrollY >= section.offsetTop){
+                console.log("Section is Visible ")
+                skillsWidth.forEach((e)=>e.style.width = e.getAttribute('width'));
+            }
+        }
+    </script>
+
+    <script>
+        let daysElement = document.querySelector('.days .value');
+        let hoursElement = document.querySelector('.hours .value');
+        let minutesElement = document.querySelector('.minutes .value');
+        let secondsElement = document.querySelector('.seconds .value');
+        let counter = setInterval(()=>{
+            let countdownDate = new Date("Dec 31,2023 23:59:59").getTime();
+            let dateNow = Date.now();
+            let difference = countdownDate-dateNow ;
+            let days = difference / 1000 / 60 / 60 / 24;
+            let hours = difference % (1000*60*60*24) / 1000 / 60 / 60;
+            let minutes = difference % (1000*60*60)  / 1000 / 60;
+            let seconds = difference % (1000 * 60) / 1000; 
+            daysElement.innerHTML = Math.floor(days);
+            hoursElement.innerHTML = Math.floor(hours);
+            minutesElement.innerHTML = Math.floor(minutes);
+            secondsElement.innerHTML = Math.floor(seconds);
+            if(difference <= 0){
+                clearInterval(counter);
+            }
+        },1000)
+    </script>
+
+    <script>
+        let statsSection =document.querySelector('.stats-section')
+        let numbers = document.querySelectorAll('.counter .num');
+        let accumlativeDurations = Array(numbers.length).fill(0);
+        let durations = [];
+        let duration = 10;
+    
+        let flag = true
+        window.onscroll = function(){
+            if(window.scrollY >= statsSection.offsetTop && flag){
+                for (let i = 0; i < numbers.length; i++) {
+                    increaseCounter(numbers[i]);
+                }
+                flag = false;
+            }
+        }
+        function increaseCounter(element){
+        let goal = element.getAttribute('data-goal');
+        let interval = setInterval(function(){
+            element.textContent++; 
+            if(element.textContent === goal){
+            clearInterval(interval);
+            }
+        },duration)
+        }
+    </script>
 </body>
 </html>

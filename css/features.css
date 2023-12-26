@@ -1,0 +1,162 @@
+.features-section .features{
+    width: calc(3*350px + 60px);
+    margin:auto;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+@media(max-width:1110px){
+    .features-section .features{
+        width: calc(2*350px + 60px);
+    }
+}
+@media(max-width:760px){
+    .features-section .features{
+        width: 350px;
+    }
+}
+@media(max-width:500px){
+    .features-section .features{
+        width: 250px;
+    }
+}
+.features-section .features .feature{
+    width: 350px;
+    border:1px solid #ececec;
+    margin:30px 0;
+}
+.features-section .features .feature .image{
+    height: 55%;
+    position:relative;
+    overflow: hidden;
+}
+.features-section .features .feature .image::after{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 255px;
+    transform: skew(0deg,-15deg);
+    transition: 0.5s transform ease;
+}
+.features-section .features .feature:hover .image::after{
+    transform: skew(0deg,15deg);
+}
+.features-section .features .feature .image .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+
+.features-section .features .feature .image img{
+    height: 100%;
+    
+}
+.features-section .features .feature .text{
+    height:45%;
+    background-color: white;
+}
+.features-section .features .feature .text h1{
+    width: fit-content;
+    padding:10px;
+    font-size: 30px;
+    margin:auto;
+}
+.features-section .features .feature .text hr{
+    height: 3px;
+    width: 70%;
+
+    margin:10px auto;
+}
+.features-section .features .feature .text p{
+    color:#777;
+    padding:10px 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    
+}
+.features-section .features .feature .text .more-button {
+    background-color: white;
+    width: fit-content;
+    padding: 5px 30px;
+    margin: auto;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* Set a z-index for the button */
+}
+
+.features-section .features .feature .text .more-button span {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    left: 0;
+    top: 0;
+    transition: 0.5s width ease;
+}
+
+.features-section .features .feature .text .more-button h2 {
+    position: relative;
+    z-index: 2; /* Set a higher z-index than the button */
+    transition: 0.5s color ease;
+}
+.features-section .features .feature:hover .text .more-button h2 {
+    color:white;
+}
+
+.features-section .features .feature:hover .text .more-button span {
+    z-index: 0; /* Set a lower z-index than the button */
+    display: block;
+    width: 100%;
+}
+
+@keyframes fullWidth{
+    0%{
+        width:0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes translateRight {
+    0%{
+        left:-30px;
+    }
+    50%{
+        left:0px;
+        
+    }
+    100%{
+        left:0;
+        width:50%;
+        height:100%;
+        border-radius: 0;
+
+    }
+}
+@keyframes translateLeft {
+    0%{
+        right:-30px;
+    }
+    50%{
+        right:0px;
+    }
+    100%{
+        right:0px;
+        width:50%;
+        height:100%;
+        border-radius: 0;
+    }
+}
