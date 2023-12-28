@@ -29,9 +29,61 @@
         img{
             width: 100%;
         }
+        ul {
+            list-style-type: none;
+        }
         .container{
             width:90%;
             margin:auto;
+        }
+        .container .title{
+            text-transform: uppercase;
+            font-weight: 800;
+            position: relative;
+            margin: auto;
+            width:fit-content;
+            margin-bottom:50px;
+            padding:5px 20px;
+            font-size: 30px;
+            border:1px solid black;
+            transition: 1s color ease;
+            z-index: 1;
+        }
+        .container .title:hover{
+            color:white;
+        }
+        .container .title::before{
+            content:"";
+            display: block;
+            width:12px;
+            height:12px;
+            background-color: #2196f3;
+            position: absolute;
+            left:-30px;
+            top:50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+        .container .title::after{
+            content:"";
+            display: block;
+            width:12px;
+            height:12px;
+            background-color: #2196f3;
+            position: absolute;
+            right:-30px;
+            top:50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+        }
+        .container .title:hover::after{
+            z-index: -1; 
+            animation: translateLeft 1s ease forwards;
+        }
+        .container .title:hover::before{
+            z-index: -1;
+
+            animation: translateRight 1s ease forwards;
         }
     </style>
     <link rel="stylesheet"href="css/landing-page.css">
@@ -92,7 +144,7 @@
                 </div>
             </div>
             <div class="shape">
-                <a><i class="fa-solid fa-arrow-down"></i></a>
+                <a><i class="fa-solid fa-angles-down"></i></a>
             </div>
         </section>
          <section class="articles">
@@ -422,9 +474,16 @@
         
                         </div>
                         <div class="description">
-                            <h4>Name</h4>
-                            <p>Simple short description</p>
-        
+                            <div>
+                                <h4>Name</h4>
+                                <p>Simple short description</p>
+                            </div>
+                            <ul class="social-mobile">
+                                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
                         </div>
                         <ul class="social">
                             <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -441,9 +500,16 @@
         
                         </div>
                         <div class="description">
-                            <h4>Name</h4>
-                            <p>Simple short description</p>
-        
+                            <div>
+                                <h4>Name</h4>
+                                <p>Simple short description</p>
+                            </div>
+                            <ul class="social-mobile">
+                                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
                         </div>
                         <ul class="social">
                             <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -460,9 +526,16 @@
         
                         </div>
                         <div class="description">
-                            <h4>Name</h4>
-                            <p>Simple short description</p>
-        
+                            <div>
+                                <h4>Name</h4>
+                                <p>Simple short description</p>
+                            </div>
+                            <ul class="social-mobile">
+                                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
                         </div>
                         <ul class="social">
                             <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -479,9 +552,16 @@
         
                         </div>
                         <div class="description">
-                            <h4>Name</h4>
-                            <p>Simple short description</p>
-        
+                            <div>
+                                <h4>Name</h4>
+                                <p>Simple short description</p>
+                            </div>
+                            <ul class="social-mobile">
+                                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
                         </div>
                         <ul class="social">
                             <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -498,9 +578,16 @@
         
                         </div>
                         <div class="description">
-                            <h4>Name</h4>
-                            <p>Simple short description</p>
-        
+                            <div>
+                                <h4>Name</h4>
+                                <p>Simple short description</p>
+                            </div>
+                            <ul class="social-mobile">
+                                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
                         </div>
                         <ul class="social">
                             <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -517,9 +604,16 @@
         
                         </div>
                         <div class="description">
-                            <h4>Name</h4>
-                            <p>Simple short description</p>
-        
+                            <div>
+                                <h4>Name</h4>
+                                <p>Simple short description</p>
+                            </div>
+                            <ul class="social-mobile">
+                                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
                         </div>
                         <ul class="social">
                             <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -536,9 +630,16 @@
         
                         </div>
                         <div class="description">
-                            <h4>Name</h4>
-                            <p>Simple short description</p>
-        
+                            <div>
+                                <h4>Name</h4>
+                                <p>Simple short description</p>
+                            </div>
+                            <ul class="social-mobile">
+                                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
                         </div>
                         <ul class="social">
                             <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -555,9 +656,16 @@
         
                         </div>
                         <div class="description">
-                            <h4>Name</h4>
-                            <p>Simple short description</p>
-        
+                            <div>
+                                <h4>Name</h4>
+                                <p>Simple short description</p>
+                            </div>
+                            <ul class="social-mobile">
+                                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
                         </div>
                         <ul class="social">
                             <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -711,9 +819,14 @@
         </section>
         <section class="timer-section">
             <div class="container">
-                <h1 class="title">HOW IT WORKS ?
+                <h1 class="title">Events
                 </h1>
+                <div class="text">
+                    <h1>New Year 2024</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro</p>
+                </div>
                 <div class="timer-container">
+                    
                     <div class="image">
                         <img src="images/events.png">
                     </div>
@@ -737,10 +850,7 @@
                             </div>
                         </div>
     
-                        <div class="text">
-                            <h1>New Year 2024</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci quam ratione aliquam excepturi nulla in harum, veritatis porro</p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -814,7 +924,7 @@
 
         <section class="top-videos-section">
             <div class="container">
-                <h1 class="title">Pricing Plans</h1>
+                <h1 class="title">Top Videos</h1>
                 <div class="top-videos">
                     <div class="list">
                         <div>
@@ -866,7 +976,7 @@
         <section class="stats-section">
             <div class="container">
         
-                <h1>Our Awesome Stats</h1>
+                <h1 class="title">Stats</h1>
                 <div class="counter-container">
                     <div class="stats-counter">
                         <i class="fa-regular fa-user"></i>                
@@ -915,7 +1025,7 @@
             </div>
         </section>
     </main>   
-    <footer >
+    <footer>
 
         <div class="container">
             <div class="col">
@@ -956,14 +1066,14 @@
     <script>
         let section = document.querySelector('.our-skills');
         let skillsWidth = document.querySelectorAll('.skill div');
-        window.onscroll = function(){
-            if(window.scrollY >= section.offsetTop){
-                console.log("Section is Visible ")
+        let isScrolled = false;
+        window.addEventListener('scroll', function(){
+            if(window.scrollY >= section.offsetTop-700  && !isScrolled){
                 skillsWidth.forEach((e)=>e.style.width = e.getAttribute('width'));
+                isScrolled = true;
             }
-        }
+        })
     </script>
-
     <script>
         let daysElement = document.querySelector('.days .value');
         let hoursElement = document.querySelector('.hours .value');
@@ -986,23 +1096,22 @@
             }
         },1000)
     </script>
-
     <script>
-        let statsSection =document.querySelector('.stats-section')
-        let numbers = document.querySelectorAll('.counter .num');
+        let statsSection = document.querySelector('.stats-section')
+        let numbers = document.querySelectorAll('.stats-counter .num');
         let accumlativeDurations = Array(numbers.length).fill(0);
         let durations = [];
         let duration = 10;
     
-        let flag = true
-        window.onscroll = function(){
-            if(window.scrollY >= statsSection.offsetTop && flag){
+        let flag = true;
+        window.addEventListener('scroll', function(){
+            if(window.scrollY >= statsSection.offsetTop - 700 && flag){
                 for (let i = 0; i < numbers.length; i++) {
                     increaseCounter(numbers[i]);
                 }
                 flag = false;
             }
-        }
+        });
         function increaseCounter(element){
         let goal = element.getAttribute('data-goal');
         let interval = setInterval(function(){

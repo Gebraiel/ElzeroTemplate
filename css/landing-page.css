@@ -19,9 +19,7 @@ header .container {
     justify-content: space-between;
 }
 
-ul {
-    list-style-type: none;
-}
+
 
 main {
     height: 80%;
@@ -64,7 +62,8 @@ main {
 
 .landing .shape a {
     animation: bounce 0.8s infinite ease;
-
+    color:#2196f3;
+    cursor: pointer;
 }
 
 @media(max-width:991px) {

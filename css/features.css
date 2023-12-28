@@ -28,7 +28,6 @@
     margin:30px 0;
 }
 .features-section .features .feature .image{
-    height: 55%;
     position:relative;
     overflow: hidden;
 }
@@ -61,7 +60,6 @@
     
 }
 .features-section .features .feature .text{
-    height:45%;
     background-color: white;
 }
 .features-section .features .feature .text h1{
@@ -88,7 +86,7 @@
     background-color: white;
     width: fit-content;
     padding: 5px 30px;
-    margin: auto;
+    margin: 20px auto;
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
@@ -122,6 +120,11 @@
     width: 100%;
 }
 
+@media(max-width:500px){
+    .features-section .features .feature .image::after{
+        top:190px;
+    }
+}
 @keyframes fullWidth{
     0%{
         width:0;

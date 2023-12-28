@@ -21,33 +21,35 @@
     width:200px;
     height:200px;
     position: absolute;
-    bottom:200px;
+    bottom:0;
     left:0;
     background-image: url("../images/dots.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.timer .image{
-    max-width:500px;
-}
+
 .timer-container{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 180px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.timer-container .image{
+    max-width:500px;
+    margin-right:20px;
 }
 .timer-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    padding:0 50px;
 }
 .timer{
     display: flex;
-    margin-bottom:50px;
     flex-wrap: wrap;
+    gap:10px
 }
 .counter {
     color:#2196f3;
@@ -67,12 +69,14 @@
     padding:10px;
     font-size: 15px;
 }
-.text{
+.timer-section .text{
+    width:50%;
+    margin:auto;
     text-align: center;
     line-height: 2;
 }
 @media(max-width:991px){
-    .timer .image{
+    .timer-container .image{
         display: none;
     }
     .timer-container{
@@ -82,27 +86,20 @@
         top:40px;
     }
     .timer-text{
-        width:100%;
+        width: 100%;
         padding:0px;
     }
-    .timer-section::before{
-        bottom:80px;
-    }
-    .counter{
-        margin-right:10px;
+    .timer-section .text{
+        width:100%;
+        margin:200px auto 0;
     }
 }
-@media(max-width:500px){
-    .timer{
-        margin-bottom: 0;
+@media(max-width:525px){
+    .timer-section .text{
+        
+        margin:100px auto 0;
+    }
 
-    }
-    .timer-container{
-        margin-top:120px;
-    }
-    .counter{
-        margin-bottom:10px;
-    }
     .timer-section::after{
         display: none;
     }
@@ -111,7 +108,7 @@
     }
 }
 
-@media(max-width:374px){
+@media(max-width:415px){
     .timer{
         justify-content: center;
     }
