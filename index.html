@@ -13,6 +13,10 @@
             margin : 0;
             padding: 0;
         }
+        html{
+            scroll-behavior: smooth;
+
+        }
         :root{
             --main-color:#2196f3;
         }
@@ -20,6 +24,7 @@
             font-family: 'Poppins', sans-serif; 
             overflow-x: hidden;   
             width:100vw;
+
             /* overflow-x: hidden;
             width:100vw; */
         }
@@ -32,9 +37,19 @@
         ul {
             list-style-type: none;
         }
+        a{
+            text-decoration: none;
+            color:black
+        }
+
         .container{
             width:90%;
+            /* max-width:1250px; */
             margin:auto;
+        }
+
+        .services-section .container ,.team-members-section .container,.testmonials-section .container,.gallery .container,.articles .container{
+            max-width:1250px;
         }
         .container .title{
             text-transform: uppercase;
@@ -112,18 +127,17 @@
             <div class="nav">
                 <ul>
                     <li>
-                        Article
+                        <a href="#articles">Article</a>
                     </li>
                     <li>
-                        Gallery
+                        <a href="#gallery">Gallery</a>
                     </li>
                     <li>
-                        Features
+                        <a href="#features">Features</a>
                     </li>
                     <li>
-                        Other Links
+                        <a href="#">Other Links</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -147,7 +161,7 @@
                 <a><i class="fa-solid fa-angles-down"></i></a>
             </div>
         </section>
-         <section class="articles">
+         <section class="articles" id="articles">
             <div class="container">
                     <h1 class="title">
                         Articles
@@ -260,7 +274,7 @@
                 </div>
             </div>
         </section>
-         <section class="gallery">
+         <section class="gallery" id="gallery">
             <div class="container">
                 <h1 class="title">
                     Gallery
@@ -305,10 +319,10 @@
             </div>
         </div> 
         </section>
-        <section class="features-section">
+        <section class="features-section" id="features">
             <div class="container">
                 <h1 class="title">
-                    Articles
+                    Features
                 </h1>
                 <div class="features">
                     <div class="feature" >
