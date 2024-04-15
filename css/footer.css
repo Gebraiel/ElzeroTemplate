@@ -57,6 +57,7 @@ a.linkedin:hover{
 .col .important-links a{
     padding:15px 0;
     border-bottom:1px solid #444;
+    color:#b9b9b9;
     cursor: pointer;
     margin-left:0;
     transition: color 0.3s ease;
